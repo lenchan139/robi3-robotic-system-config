@@ -7,11 +7,11 @@
         1
       ],
       "cover_images": [
-        "https://api.robi3.com/robi3-w00x/products_hardcode/cover-images/gaidanzaiMOP22.jpg",
-        "https://api.robi3.com/robi3-w00x/products_hardcode/cover-images/robot-made-waffle.jpg",
-        "https://api.robi3.com/robi3-w00x/products_hardcode/cover-images/ice-cream-waffle.jpg"
+        "https://lenchan139.github.io/robi3-robotic-system-config/images/w00x/w001-1/cover_images/1.jpg",
+        "https://lenchan139.github.io/robi3-robotic-system-config/images/w00x/w001-1/cover_images/2.jpg",
+        "https://lenchan139.github.io/robi3-robotic-system-config/images/w00x/w001-1/cover_images/3.jpg"
       ],
-      "not_working_image": "https://api.robi3.com/robi3-w00x/products_hardcode/cover-images/pause1.jpg",
+      "not_working_image": "https://lenchan139.github.io/robi3-robotic-system-config/images/w00x/w001-1/pause1_machine.jpg",
       "num_of_choice": 2,
       "allow_none_option": true
     },
@@ -28,7 +28,7 @@
           "zh_hant": "香港民間小食雞蛋仔",
           "zh_hans": "香港民间小吃鸡蛋仔"
         },
-        "image_url": "https://api.robi3.com/robi3-w00x/products_hardcode/product-images/waffle554x550_original.jpg",
+        "image_url": "https://lenchan139.github.io/robi3-robotic-system-config/images/w00x/w001-1/waffle554x550_original.jpg",
         "price": 22
       }
     ],
@@ -63,7 +63,7 @@
             "hans": "托盘有蛋仔，但是一直没有拿走，需要人工去拿走",
             "hant": "托盘有蛋仔，但是一直没有拿走，需要人工去拿走"
           },
-          "image": "https://api.robi3.com/robi3-w00x/products_hardcode/cover-images/pause.jpg"
+          "image": "https://lenchan139.github.io/robi3-robotic-system-config/images/w00x/w001-1/pause1_machine.jpg"
         }
       },
       {
