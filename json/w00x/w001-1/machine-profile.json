@@ -1,0 +1,399 @@
+
+{
+    "success": true,
+    "settings": {
+      "currency": "HKD",
+      "max_choices": [
+        1
+      ],
+      "cover_images": [
+        "https://lenchan139.github.io/robi3-robotic-system-config/images/w00x/w001-1/cover_images/1.jpg",
+        "https://lenchan139.github.io/robi3-robotic-system-config/images/w00x/w001-1/cover_images/2.jpg",
+        "https://lenchan139.github.io/robi3-robotic-system-config/images/w00x/w001-1/cover_images/3.jpg"
+      ],
+      "not_working_image": "https://lenchan139.github.io/robi3-robotic-system-config/images/w00x/w001-1/pause1_machine.jpg",
+      "num_of_choice": 2,
+      "allow_none_option": true
+    },
+    "products": [
+      {
+        "product_id": 1001,
+        "name": {
+          "en": "Egglettes Waffle",
+          "zh_hant": "雞蛋仔",
+          "zh_hans": "鸡蛋仔"
+        },
+        "description": {
+          "en": "Hong Kong local snack - Egglettes Waffle",
+          "zh_hant": "香港民間小食雞蛋仔",
+          "zh_hans": "香港民间小吃鸡蛋仔"
+        },
+        "image_url": "https://lenchan139.github.io/robi3-robotic-system-config/images/w00x/w001-1/waffle554x550_original.jpg",
+        "price": 22
+      }
+    ],
+    "hardware_address": {
+      "get_error": 6640,
+      "get_cooking_sequence": 6500,
+      "set_go_origin": 6001,
+      "set_emergency_stop": 6002,
+      "set_exhibition_mode_not_sales_mode": 6023,
+      "set_robot_dance_once": 6024,
+      "set_sleep_mode": 6025,
+      "set_clear_all_alarms": 6029,
+      "set_clear_plate_counts": 6070,
+      "get_is_emergency_stopped": 6303,
+      "get_is_robot_dancing": 6304,
+      "get_is_robot_at_origin": 6305,
+      "get_is_fan_on": 6306,
+      "get_is_making_waffle_order_success": 6307,
+      "set_make_waffle": 6000,
+      "set_dispose_a_cup_of_batter": 6004,
+      "get_is_waffle_maker_standby": 6300,
+      "get_is_waffle_maker_processing": 6301,
+      "get_is_waffle_maker_done": 6302
+    },
+    "errors": [
+      {
+        "address": 6600,
+        "tag": "item_on_tray",
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "托盘有蛋仔，但是一直没有拿走，需要人工去拿走",
+            "hant": "托盘有蛋仔，但是一直没有拿走，需要人工去拿走"
+          },
+          "image": "https://lenchan139.github.io/robi3-robotic-system-config/images/w00x/w001-1/pause1_machine.jpg"
+        }
+      },
+      {
+        "address": 6601,
+        "tag": "out_of_batter",
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "冰箱蛋仔液已经使用完毕，请检查！",
+            "hant": "冰箱蛋仔液已经使用完毕，请检查！"
+          },
+          "image": "",
+          "location": "A"
+        }
+      },
+      {
+        "address": 6602,
+        "tag": "out_of_plates",
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "托盘使用完毕，请增加托盘",
+            "hant": "托盘使用完毕，请增加托盘"
+          },
+          "image": ""
+        }
+      },
+      {
+        "address": 6616,
+        "tag": "robot_emergency_button_activated",
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "机器人示教器急停被按下",
+            "hant": "机器人示教器急停被按下"
+          },
+          "image": ""
+        }
+      },
+      {
+        "address": 6617,
+        "tag": "emergency_button_activated",
+        "info": {
+          "text": {
+            "en": "Unknown Error",
+            "hans": "不明故障",
+            "hant": "不明故障"
+          },
+          "image": ""
+        }
+      },
+      {
+        "address": 6618,
+        "tag": "robot_alarm",
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "急停按钮被按下",
+            "hant": "急停按钮被按下"
+          },
+          "image": ""
+        }
+      },
+      {
+        "address": 6621,
+        "tag": "robot_collision",
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "机器人被憋住了，或是发生了碰撞",
+            "hant": "机器人被憋住了，或是发生了碰撞"
+          },
+          "image": ""
+        }
+      },
+      {
+        "address": 6622,
+        "tag": "machine_move_to_origin_failed",
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "整机回原失败",
+            "hant": "整机回原失败"
+          },
+          "image": ""
+        }
+      },
+      {
+        "address": 6623,
+        "tag": "working_mode_failed",
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "回原未完成，自动启动失败",
+            "hant": "回原未完成，自动启动失败"
+          },
+          "image": ""
+        }
+      },
+      {
+        "address": 6641,
+        "tag": "pump_control",
+        "info": {
+          "text": {
+            "en": "Unknown Error",
+            "hans": "不明故障",
+            "hant": "不明故障"
+          },
+          "image": "",
+          "location": "A"
+        }
+      },
+      {
+        "address": 6719,
+        "tag": "pickup_cup_failed",
+        "info": {
+          "text": {
+            "en": "Unknown Error",
+            "hans": "不明故障",
+            "hant": "不明故障"
+          },
+          "image": ""
+        }
+      }
+    ],
+    "warnings": [
+      {
+        "address": 6619,
+        "tag": "batter_running_out",
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "蛋仔液剩余个数不多，需要加蛋仔液",
+            "hant": "蛋仔液剩余个数不多，需要加蛋仔液"
+          },
+          "image": "",
+          "location": "A"
+        }
+      },
+      {
+        "address": 6718,
+        "tag": "batter_running_out",
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "蛋仔液剩余个数不多，需要加蛋仔液",
+            "hant": "蛋仔液剩余个数不多，需要加蛋仔液"
+          },
+          "image": "",
+          "location": "B"
+        }
+      },
+      {
+        "address": "N/A",
+        "tag": "unable_to_process_waffle_now",
+        "info": {
+          "text": {
+            "en": "We have received your order but unable to make the waffle right now because Captain Robi is busy.He will start processing your order when he is available. Please be patient.",
+            "hans": "我们已经收到您的订单，但机器人还是忙着暂时没空处理。请耐心等待，他有空时会第一时间处理。",
+            "hant": "我们已经收到您的订单，但机器人还是忙着暂时没空处理。请耐心等待，他有空时会第一时间处理。"
+          },
+          "image": ""
+        }
+      }
+    ],
+    "cooking_sequence": [
+      {
+        "id": 1,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "蛋仔锅机器人去取一次性空杯子",
+            "hant": "蛋仔锅机器人去取一次性空杯子"
+          },
+          "image": ""
+        }
+      },
+      {
+        "id": 2,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "机器人在抽取蛋仔液",
+            "hant": "机器人在抽取蛋仔液"
+          },
+          "image": ""
+        }
+      },
+      {
+        "id": 3,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "机器人去倒蛋仔液",
+            "hant": "机器人去倒蛋仔液"
+          },
+          "image": ""
+        }
+      },
+      {
+        "id": 4,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "机器人去放下杯子",
+            "hant": "机器人去放下杯子"
+          },
+          "image": ""
+        }
+      },
+      {
+        "id": 5,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "机器人去取吸盘组件",
+            "hant": "机器人去取吸盘组件"
+          },
+          "image": ""
+        }
+      },
+      {
+        "id": 6,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "蛋仔锅机器人去取托盘",
+            "hant": "蛋仔锅机器人去取托盘"
+          },
+          "image": ""
+        }
+      },
+      {
+        "id": 7,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "蛋仔锅机器人去放下吸盘 ",
+            "hant": "蛋仔锅机器人去放下吸盘 "
+          },
+          "image": ""
+        }
+      },
+      {
+        "id": 8,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "蛋仔锅机器人去取叉子",
+            "hant": "蛋仔锅机器人去取叉子"
+          },
+          "image": ""
+        }
+      },
+      {
+        "id": 9,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "蛋仔锅机器人在等蛋仔烘烤完成去插鸡蛋仔",
+            "hant": "蛋仔锅机器人在等蛋仔烘烤完成去插鸡蛋仔"
+          },
+          "image": ""
+        }
+      },
+      {
+        "id": 10,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "蛋仔锅机器人在叉鸡蛋仔",
+            "hant": "蛋仔锅机器人在叉鸡蛋仔"
+          },
+          "image": ""
+        }
+      },
+      {
+        "id": 11,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "蛋仔锅机器人在吹风变脆",
+            "hant": "蛋仔锅机器人在吹风变脆"
+          },
+          "image": ""
+        }
+      },
+      {
+        "id": 12,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "蛋仔锅机器人在放到盘子上",
+            "hant": "蛋仔锅机器人在放到盘子上"
+          },
+          "image": ""
+        }
+      },
+      {
+        "id": 13,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "蛋仔锅机器人去放下叉子和送饼出来",
+            "hant": "蛋仔锅机器人去放下叉子和送饼出来"
+          },
+          "image": ""
+        }
+      },
+      {
+        "id": 14,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "蛋仔锅杯子使用次数够或是蛋仔液不新鲜（扔掉杯子的动作）",
+            "hant": "蛋仔锅杯子使用次数够或是蛋仔液不新鲜（扔掉杯子的动作）"
+          },
+          "image": ""
+        }
+      },
+      {
+        "id": 15,
+        "info": {
+          "text": {
+            "en": "",
+            "hans": "蛋仔锅在加热升温",
+            "hant": "蛋仔锅在加热升温"
+          },
+          "image": ""
+        }
+      }
+    ]
+  }
