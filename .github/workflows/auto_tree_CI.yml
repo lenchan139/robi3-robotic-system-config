@@ -15,7 +15,7 @@ jobs:
         - uses: actions/checkout@v3
         - name: Deploy to robi3 server 
           run: |
-            pacman -Syu sshpass tree openssh rsync --noconfirm
+            pacman -Syu sshpass tree openssh rsync git --noconfirm
             echo sshpass -p $ROBI3_UPLOADER_PASSWORD rsync -e "ssh -oHostKeyAlgorithms=+ssh-dss -o StrictHostKeyChecking=no" -avz --exclude ".*"  $(pwd)/  $ROBI3_UPLOADER_USERNAME@$ROBI3_UPLOADER_HOST:$ROBI3_UPLOADER_PATH/
             sshpass -p $ROBI3_UPLOADER_PASSWORD rsync -e "ssh -oHostKeyAlgorithms=+ssh-dss -o StrictHostKeyChecking=no" -avz --exclude ".*"  ./  $ROBI3_UPLOADER_USERNAME@$ROBI3_UPLOADER_HOST:$ROBI3_UPLOADER_PATH/
             tree --gitignore -H https://lenchan139.github.io/robi3-robotic-system-config/ -o index.html
