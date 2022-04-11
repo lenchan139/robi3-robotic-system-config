@@ -13,11 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - uses: archlinux@latest
     - name: Build the site index uses tree command
       run: |
         tree --gitignore -H https://lenchan139.github.io/robi3-robotic-system-config/ -o index.html
 
+
+    - uses: docker://archlinux@latest
     - name: Deploy to robi3 server 
       run: |
         pacman -S sshpass
