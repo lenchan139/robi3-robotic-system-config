@@ -17,7 +17,7 @@ jobs:
       run: |
         tree --gitignore -H https://lenchan139.github.io/robi3-robotic-system-config/ -o index.html
     
-    - uses: archlinux:latest
+    - uses: archlinux
     - name: Deploy to robi3 server 
       run: |
         pacman -S sshpass
