@@ -16,16 +16,17 @@ jobs:
     - name: Build the site index uses tree command
       run: |
         tree --gitignore -H https://lenchan139.github.io/robi3-robotic-system-config/ -o index.html
-
-
-    - uses: docker://archlinux@latest
-    - name: Deploy to robi3 server 
-      run: |
-        pacman -S sshpass
-        sshpass -p $ROBI3_UPLOADER_PASSWORD rsync -e "ssh -oHostKeyAlgorithms=+ssh-dss -o StrictHostKeyChecking=no" -avz --exclude ".*"  $(pwd)/  $ROBI3_UPLOADER_USERNAME@$ROBI3_UPLOADER_HOST:$ROBI3_UPLOADER_PATH/
-        
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./
+  container:
+    runs-on: ubuntu-latest
+    container: node:10.16-jessie
+    steps:
+        - name: Deploy to robi3 server 
+          run: |
+            pacman -S sshpass
+            sshpass -p $ROBI3_UPLOADER_PASSWORD rsync -e "ssh -oHostKeyAlgorithms=+ssh-dss -o StrictHostKeyChecking=no" -avz --exclude ".*"  $(pwd)/  $ROBI3_UPLOADER_USERNAME@$ROBI3_UPLOADER_HOST:$ROBI3_UPLOADER_PATH/
+ 
