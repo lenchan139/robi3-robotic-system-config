@@ -9,15 +9,17 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: archlinux:latest
 
     steps:
     - uses: actions/checkout@v3
     - name: Build the site index uses tree command
       run: |
         tree --gitignore -H https://lenchan139.github.io/robi3-robotic-system-config/ -o index.html
-
     
+    - name: Deploy to robi3 server 
+        run: sshpass -p $ROBI3_UPLOADER_PASSWORD rsync -e "ssh -oHostKeyAlgorithms=+ssh-dss -o StrictHostKeyChecking=no" -avz --exclude ".*"  $(pwd)/  $ROBI3_UPLOADER_USERNAME@$ROBI3_UPLOADER_HOST:$ROBI3_UPLOADER_PATH/
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
