@@ -17,7 +17,11 @@ jobs:
             pacman -Syu sshpass tree --noconfirm
             sshpass -p $ROBI3_UPLOADER_PASSWORD rsync -e "ssh -oHostKeyAlgorithms=+ssh-dss -o StrictHostKeyChecking=no" -avz --exclude ".*"  $(pwd)/  $ROBI3_UPLOADER_USERNAME@$ROBI3_UPLOADER_HOST:$ROBI3_UPLOADER_PATH/
             tree --gitignore -H https://lenchan139.github.io/robi3-robotic-system-config/ -o index.html
-            
+          env:
+            ROBI3_UPLOADER_PASSWORD: ${{ secrets.ROBI3_UPLOADER_PASSWORD }}
+            ROBI3_UPLOADER_USERNAME: ${{ secrets.ROBI3_UPLOADER_USERNAME }}
+            ROBI3_UPLOADER_HOST: ${{ secrets.ROBI3_UPLOADER_HOST }}
+            ROBI3_UPLOADER_PATH: ${{ secrets.ROBI3_UPLOADER_PATH }}
         - name: Deploy
           uses: peaceiris/actions-gh-pages@v3
           with:
