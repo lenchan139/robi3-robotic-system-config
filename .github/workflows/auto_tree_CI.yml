@@ -7,13 +7,9 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
   container:
     runs-on: ubuntu-latest
-    container: node:10.16-jessie
+    container: archlinux
     steps:
         
         - uses: actions/checkout@v3
